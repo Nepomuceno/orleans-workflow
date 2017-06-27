@@ -34,6 +34,17 @@ The workflow it is expected to be stored in `Json` so you would need this workfl
             "type": "task-type",
             "events": [
                 {"name": "eventName", "action": "action-id"}
+            ],
+            "child": [
+                {
+                    "id": "unique-id",
+                    "field": "unique-id",
+                    "value": "condition-value",
+                    "evaluation": "gt"
+                },
+                {
+                    "id": "unique-id",
+                }
             ]
         }
     ],
